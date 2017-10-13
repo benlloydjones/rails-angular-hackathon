@@ -1,0 +1,11 @@
+<h1 class="title is-1">{{quizzesShow.quiz.name}}</h1>
+<h3>A quiz by {{quizzesShow.quiz.creator}}</h3>
+<p>{{quizzesShow.quiz.description}}</p>
+
+<p ng-if="quizzesShow.quiz.questions.length == 0">There are no questions to show yet...</p>
+
+<div class="quiz-question" ng-repeat="question in quizzesShow.quiz.questions">
+  <p>Question: {{question.question}}</p>
+  <p>Answer: {{question.answer}}</p>
+  <p>Value: {{question.answer}}</p>
+</div>
