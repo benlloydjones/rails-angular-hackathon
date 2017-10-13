@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="hackathon">
   <head>
+    <base href="/">
     <meta charset="utf-8">
     <title>Angular Stack Setup</title>
     <!-- inject:js -->
@@ -8,7 +9,11 @@
     <!-- inject:css -->
     <!-- endinject -->
   </head>
-  <body>
+  <body ng-controller="MainCtrl as main">
+    <nav>
+      Navbar here
+    </nav>
     <h1>Hackathon</h1>
+    <main ui-view></main>
   </body>
 </html>
