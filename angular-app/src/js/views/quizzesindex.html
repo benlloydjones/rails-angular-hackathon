@@ -1,20 +1,17 @@
 <section class="section container">
-  {{ quizzesIndex.all }}
   <div class="columns is-multiline">
-    <div class="column is-3">
+    <div class="column is-3" ng-repeat="quiz in quizzesIndex.all">
       <div class="card">
         <div class="card-image">
-          <figure class="image is-4by3 index-image" style="background-image: url(
-          <!-- Quiz Image -->
-          );"></figure>
+          <figure class="image is-4by3 index-image" style="background-image: url({{ quiz.image }});"></figure>
         </div>
         <div class="card-content">
           <div class="media-content">
             <p class="title is-4">
-              <!-- Quiz name -->
+              {{ quiz.name }}
             </p>
             <p class="subtitle is-6">
-              <!-- Quiz creator -->
+              {{ quiz.creator }}
             </p>
           </div>
         </div>
