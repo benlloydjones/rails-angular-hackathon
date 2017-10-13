@@ -4,7 +4,7 @@ angular
 
 Router.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 function Router($stateProvider, $urlRouterProvider, $locationProvider) {
-  $locationProvider.html5mode(true);
+  $locationProvider.html5Mode(true);
 
   $stateProvider
     .state('home', {
