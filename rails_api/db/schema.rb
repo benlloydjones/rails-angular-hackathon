@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(version: 20171013110345) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "questions_quizes", id: false, force: :cascade do |t|
-    t.bigint "quize_id", null: false
+  create_table "questions_quizzes", id: false, force: :cascade do |t|
+    t.bigint "quiz_id", null: false
     t.bigint "question_id", null: false
   end
 
